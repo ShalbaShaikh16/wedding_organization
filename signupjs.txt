@@ -1,0 +1,90 @@
+.photo-list{
+    text-align: center;
+    color:#fc036b;
+    text-transform: uppercase;
+    font-size:15px;
+    padding-bottom:2rem; 
+    padding-top:6rem;
+   
+   }
+   .photo-list h3{
+    font-size: 35px;
+    font-family: 'Ysabeau', sans-serif;
+    color: #fc036b;
+    padding-top: 5px;
+   }
+   
+   
+   
+   .photo-list .photo-box .photo-info h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color:#fc036b
+   }
+   .photo-list .photo-box .photo-info p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:#666;
+   }
+   .photo-list .photo-box .photo-info{
+    flex:1;
+   }
+   .photo-list .photo-box .photo-info{
+    font-family: sans-serif;
+    font-size: 19px;
+    color:black;
+    margin-top:20px
+   }
+   .photo-list .photo-box img{
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border:2px solid #fc036b;
+    border-radius: 20px;
+    transition: 0.5s ease;
+   }
+   .photo-list .photo-box .req{
+    height: 2rem;
+     margin-top: 1rem;
+   }
+   .photo-list .photo-box .req .bT{
+    font-size: 15px;
+    background-color: #fc036b;
+    color:#fff;
+     border-radius: 7rem;
+     padding:.7rem 2rem;
+    cursor: pointer;
+   }
+    </style>
+    <!---Javascript---->
+            <script>
+                let signupBtn=document.getElementById("signupBtn");
+                let signinBtn=document.getElementById("signinBtn");
+                let nameField=document.getElementById("nameField");
+                let title=document.getElementById("title");
+                
+    
+                signinBtn.onclick=function(){
+                    nameField.style.maxHeight="0";
+                    title.innerHTML="Sign in";
+                    signupBtn.classList.add("disable");
+                    signinBtn.classList.remove("disable");
+                }
+    
+                    signupBtn.onclick=function(){
+                    nameField.style.maxHeight="60px";
+                    title.innerHTML="Sign up";
+                    signupBtn.classList.remove("disable");
+                    signinBtn.classList.add("disable");
+                }
+            </script>
+            
+if(!$conn)
+{
+    echo"Connection unsuccessful";
+}
+else{
+    echo"connection successful";
+}
+?>
